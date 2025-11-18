@@ -90,7 +90,7 @@
             // 2. 验证目标域名是否授权
             if (!isTargetAuthorized(targetUrl)) {
                 loader.style.display = 'none';
-                unauthorizedTip.textContent = '❌ 目标域名未授权，禁止访问';
+                unauthorizedTip.textContent = '❌ 域名未授权，禁止使用';
                 unauthorizedTip.style.display = 'block';
                 return;
             }
