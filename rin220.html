@@ -26,8 +26,8 @@
         // ===================== 目标URL域名授权配置（重点修改这里！）=====================
         // 仅允许跳转至以下授权域名，支持主域名、子域名（按需添加/删除）
         const AUTHORIZED_TARGET_DOMAINS = [
-            "b7wwxs20.duia.eu",
-            "tx3.b7wwxs20.duia.eu",
+            "nowddns.com",
+            "ownip.net",
             "new-domain1.com",
             "new-domain2.com"
         ];
@@ -74,7 +74,7 @@
             const encodedUrl = getJumpParam();
             if (!encodedUrl) {
                 loader.style.display = 'none';
-                errorTip.textContent = '缺少跳转链接，请检查u参数';
+                errorTip.textContent = '官方网页您未使用链接';
                 errorTip.style.display = 'block';
                 return;
             }
